@@ -1,11 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <title>Ошибка оплаты</title>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ошибка оплаты</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background: #f5f7fa;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
+        .card {
+            max-width: 500px;
+            background: white;
+            border-radius: 24px;
+            box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1);
+            padding: 32px;
+            text-align: center;
+        }
+        .cross {
+            width: 64px;
+            height: 64px;
+            background: #ef4444;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 36px;
+            color: white;
+            margin-bottom: 24px;
+        }
+        h1 {
+            font-size: 28px;
+            margin: 0 0 12px;
+            color: #1f2937;
+        }
+        p {
+            color: #4b5563;
+            line-height: 1.5;
+            margin: 8px 0;
+        }
+        .button {
+            display: inline-block;
+            background: #ef4444;
+            color: white;
+            text-decoration: none;
+            padding: 12px 28px;
+            border-radius: 40px;
+            margin-top: 24px;
+            font-weight: 500;
+            transition: background 0.2s;
+        }
+        .button:hover {
+            background: #dc2626;
+        }
+    </style>
 </head>
 <body>
-    <h1>❌ Ошибка оплаты</h1>
-    <p>Платёж не прошёл. Попробуйте ещё раз или свяжитесь со мной.</p>
+    <div class="card">
+        <div class="cross">✕</div>
+        <h1>Ошибка оплаты</h1>
+        <p>Платёж не прошёл. Пожалуйста, попробуйте ещё раз.</p>
+        <p>Если проблема повторяется, свяжитесь со мной.</p>
+        <a href="https://t.me/твой_юзернейм" class="button">Написать в Telegram</a>
+    </div>
 </body>
 </html>
